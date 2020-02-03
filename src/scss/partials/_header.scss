@@ -1,7 +1,7 @@
 .Header {
   width: 100vw;
   height: 70px;
-  background-color: none;
+  background-color: $primary-bg;
 
   &--title {
     font-size: $font-header;

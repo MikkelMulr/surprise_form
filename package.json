@@ -6,7 +6,7 @@
 	"scripts": {
 		"start": "concurrently \"npm run sass\" \"npm run lite\"",
 		"lite": "lite-server",
-		"sass": "node-sass -wr --output-style compressed -o src/scss dist/css"
+		"sass": "node-sass -wr --output-style compressed -o dist/css src/scss"
 	},
 	"author": "",
 	"license": "ISC",
