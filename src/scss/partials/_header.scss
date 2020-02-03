@@ -1,0 +1,10 @@
+.Header {
+  width: 100vw;
+  height: 70px;
+  background-color: none;
+
+  &--title {
+    font-size: $font-header;
+    font-family: $font-primary;
+  }
+}
