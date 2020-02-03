@@ -1,20 +1,20 @@
 {
-  "name": "secretmessageform",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "start": "concurrently \"npm run sass\" \"npm run lite\"",
-    "lite": "lite-server",
-    "sass": "node-sass -wr --output-style compressed -o dist/css src/scss"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "lite-server": "^2.5.4"
-  },
-  "dependencies": {
-    "concurrently": "^5.1.0",
-    "node-sass": "^4.13.1"
-  }
+	"name": "secretmessageform",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"start": "concurrently \"npm run sass\" \"npm run lite\"",
+		"lite": "lite-server",
+		"sass": "node-sass -wr --output-style compressed --watch -o dist/css src/scss"
+	},
+	"author": "Mike Mueller",
+	"license": "ISC",
+	"devDependencies": {
+		"lite-server": "^2.5.4"
+	},
+	"dependencies": {
+		"concurrently": "^5.1.0",
+		"node-sass": "^4.13.1"
+	}
 }
