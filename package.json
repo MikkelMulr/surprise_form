@@ -6,9 +6,9 @@
 	"scripts": {
 		"start": "concurrently \"npm run sass\" \"npm run lite\"",
 		"lite": "lite-server",
-		"sass": "node-sass -wr --output-style compressed --watch -o dist/css src/scss"
+		"sass": "node-sass -wr --output-style compressed -o src/scss dist/css"
 	},
-	"author": "Mike Mueller",
+	"author": "",
 	"license": "ISC",
 	"devDependencies": {
 		"lite-server": "^2.5.4"
