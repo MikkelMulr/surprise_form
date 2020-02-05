@@ -1,0 +1,24 @@
+Form concept: Registration Form
+
+Action: Scramble user data for crappy password choice
+
+Fields: 
+        - First Name
+        - Last Name
+        - Email
+        - Password
+        - Confirm password
+        - Submit button
+
+Pattern: (must match)
+        - First Name: (any)+"[s, e, v]"
+        - Last Name:  (any)+"[e, n, t]"
+        - Email:      (any)+"y"+"7"@(any).com
+        - Password:   password123
+        
+Reaction: 
+        - Form data is scrambled
+        - Form field sizes and position are distorted from original layout
+        - Form color change to dark and ominous
+        - Secret text area is revealed asking for a secret password (all scrambled text from form inputs combined)
+        - If secret password is entered, Form reverts to normal

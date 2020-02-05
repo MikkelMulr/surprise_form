@@ -1,0 +1,6 @@
+Click event should:
+  - Change styles to primatives
+  - Colors to dark (retro 95/ 98)
+  - Open new input box with instructions
+  - "error" message 
+  - distortion effects

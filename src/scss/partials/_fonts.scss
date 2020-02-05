@@ -1,3 +1,16 @@
-$font-primary: 'Arial';
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+$font-primary: 'Montserrat',
+sans-serif;
+
+$font-secondary: 'Lato',
+sans-serif;
+
+$font-error: 'Press Start 2P',
+cursive;
 
 $font-header: 1.8rem;
+
+$font-form: 1.2rem;
