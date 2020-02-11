@@ -1,132 +1,298 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
-  padding-top: 5rem;
-  max-width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background-color: $primary-bg;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-
+	max-width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background-color: $alternate-bg;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 
-// .art {
-//   width: 50vh;
-//   height: 100vh;
-//   background-color: red;
-// }
+.art {
+	min-width: 50vw;
+	width: 100%;
+	height: 100vh;
+	background-image: url('https://images.pexels.com/photos/2096543/pexels-photo-2096543.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-position: right;
+	background-size: cover;
+
+	.overlay {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		background-color: $secondary-bg-opac;
+		padding: 5rem;
+		width: 100%;
+		height: 100%;
+
+		h2 {
+			text-align: center;
+			padding: 2rem;
+			border-radius: 20px;
+			color: $btn-primary;
+			font-family: $font-primary;
+			font-size: 2.25rem;
+			width: 50%;
+			background-color: $alternate-bg;
+			box-sizing: $shadow-primary;
+		}
+	}
+}
+
+.std_form {
+	min-width: 50vw;
+	width: 100%;
+}
 
 .form-container {
-  border-radius: 8px;
-  box-shadow: $shadow-primary;
-  padding: 1rem;
-  max-width: 380px;
-  width: 90%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+	border-radius: 8px;
+	box-shadow: $shadow-primary;
+	padding: 1rem;
+	max-width: 380px;
+	width: 90%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: $primary-bg;
 }
 
 header {
-  max-width: 360px;
-  width: 90%;
-  height: 60px;
-  display: flex;
-  border-radius: 12px;
-  font-family: $font-primary;
-  box-shadow: $shadow-primary;
+	max-width: 360px;
+	width: 90%;
+	height: 60px;
+	display: flex;
+	border-radius: 12px;
+	font-family: $font-primary;
+	box-shadow: $shadow-primary;
 
-  h2 {
-    text-align: center;
-    padding: 1rem;
-    height: 100%;
-    width: 100%;
-    border-radius: 12px;
-    color: $btn-primary;
-  }
+	h2 {
+		text-align: center;
+		padding: 1rem;
+		height: 100%;
+		width: 100%;
+		border-radius: 12px;
+		color: $btn-primary;
+	}
 }
-
 
 main {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 
+	form {
+		max-height: 90vh;
+		height: 100%;
+		max-width: 360px;
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 
-  form {
-    max-height: 90vh;
-    height: 50vh;
-    max-width: 360px;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+		fieldset {
+			outline: none;
+			border: none;
+		}
 
+		input[type=text],
+		input[type=password] {
+			font-size: $font-form;
+			font-family: $font-secondary;
+			margin: 1rem 0;
+			max-width: 360px;
+			width: 100%;
+			background-color: $primary-bg;
+			padding: 1rem;
+			border-style: none;
+			outline: none;
+			border-radius: 8px;
+			box-shadow: $shadow-inset;
 
-    fieldset {
-      outline: none;
-      border: none;
-    }
+			&:hover,
+			&:focus {
+				background-color: #fff;
+			}
+		}
 
-    input[type=text],
-    input[type=password] {
-      font-size: $font-form;
-      font-family: $font-secondary;
-      margin: 1rem 0;
-      max-width: 360px;
-      width: 100%;
-      background-color: $primary-bg;
-      padding: 1rem;
-      border-style: none;
-      outline: none;
-      border-radius: 8px;
-      box-shadow: $shadow-inset;
+		input[type=button] {
+			font-size: $font-form;
+			font-weight: bold;
+			font-family: $font-primary;
+			color: $btn-primary;
+			padding: 1rem;
+			outline: none;
+			border: none;
+			max-width: 360px;
+			width: 100%;
+			box-shadow: $shadow-primary;
+			border-radius: 8px;
+			transition: all 0.2s linear;
+			cursor: pointer;
 
-      &:hover,
-      &:focus {
-        background-color: #fff;
-      }
-    }
-
-    input[type=button] {
-      font-size: $font-form;
-      font-weight: bold;
-      font-family: $font-primary;
-      color: $btn-primary;
-      padding: 1rem;
-      outline: none;
-      border: none;
-      max-width: 360px;
-      width: 100%;
-      box-shadow: $shadow-primary;
-      border-radius: 8px;
-      transition: all 0.2s linear;
-      cursor: pointer;
-
-      &:hover {
-        background-color: $btn-primary;
-        color: #fff;
-      }
-    }
-  }
+			&:hover {
+				background-color: $btn-primary;
+				color: #fff;
+			}
+		}
+	}
 }
 
-// .std_form {
-//   width: 50vw;
-// }
-
 .scrt_form {
-  display: none;
+	background-color: #000;
+	display: none;
+	animation: showHidden 0.3s linear;
+
+	form {
+		max-height: 90vh;
+		height: 50vh;
+		max-width: 360px;
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-family: $font-error;
+
+		fieldset {
+			outline: none;
+			border: none;
+
+			#firstName_scrt {
+				animation: errorInputs-left 1s linear;
+			}
+
+			#lastName_scrt {
+				animation: errorInputs-right 1.25s linear;
+			}
+
+			#email_scrt {
+				animation: errorInputs-left 0.6s linear;
+			}
+
+			#password_scrt {
+				animation: errorInputs-right 2s linear;
+			}
+
+			#conf_password_scrt {
+				animation: errorInputs-right 0.4s linear;
+			}
+		}
+
+		#srctBtn {
+			animation: errorInputs-left 2.25s linear;
+		}
+
+		textarea {
+			animation: errorInputs-ta 2s linear;
+			outline: none;
+			border: 6px dotted $gross;
+		}
+
+		input[type=text],
+		input[type=password] {
+			color: red;
+			font-family: $font-error;
+			font-size: $font-form;
+			margin: 1rem 0;
+			max-width: 360px;
+			width: 100%;
+			background-color: black;
+			padding: 1rem;
+			border-style: none;
+			outline: 3px solid $error;
+			border-radius: 0px;
+			box-shadow: none;
+
+			&:hover,
+			&:focus {
+				background-color: #000;
+			}
+		}
+
+		input[type=button] {
+			font-size: $font-form;
+			font-weight: bold;
+			font-family: $font-error;
+			color: #fff;
+			padding: 1rem;
+			outline: none;
+			border: 2px solid white;
+			max-width: 360px;
+			width: 100%;
+			box-shadow: none;
+			border-radius: 0px;
+			transition: none;
+			background-color: $error;
+			cursor: pointer;
+
+			&:hover {
+				background-color: $gross;
+				color: #fff;
+			}
+		}
+	}
+}
+
+@keyframes errorInputs-right {
+	0% {
+		transform: translateX(800px);
+	}
+
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+@keyframes errorInputs-left {
+	0% {
+		transform: translateX(-800px);
+	}
+
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+@keyframes errorInputs-ta {
+	0% {
+		transform: scaleX(0);
+	}
+
+	100% {
+		transform: scaleX(1);
+	}
+}
+
+@keyframes showHidden {
+	0% {
+		transform: translateY(800px);
+		background-color: $error;
+	}
+
+	100% {
+		transform: translateY(0px);
+		background-color: #000;
+	}
+}
+
+@media (max-width: 400px) {
+	.art {
+		display: none;
+	}
+
+	.form-container {
+		height: 90%;
+	}
 }

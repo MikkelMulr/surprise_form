@@ -15,6 +15,7 @@
 	},
 	"dependencies": {
 		"concurrently": "^5.1.0",
-		"node-sass": "^4.13.1"
+		"node-sass": "^4.13.1",
+		"scrambling-letters": "^1.6.1"
 	}
 }

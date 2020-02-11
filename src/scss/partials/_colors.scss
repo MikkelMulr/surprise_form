@@ -1,18 +1,14 @@
 $primary-bg: #eee;
+$alternate-bg: rgb(226, 241, 234);
+$secondary-bg: rgb(154, 201, 156);
+$secondary-bg-opac: rgba(201, 190, 154, 0.5);
 // button + header text
 $btn-primary: rgb(109, 180, 122);
-
-
+$gross: rgb(255, 0, 140);
+$error: red;
 // Shadows
 
-$shadow-primary: 30px 30px 30px -10px rgba(0, 0, 0, 0.12),
--30px -30px 30px -10px rgba(255, 255, 255, 0.4),
--0.5px -0.5px 0 rgba(255, 255, 255, 1),
-0.5px 0.5px 0 rgba(0, 0, 0, 0.02);
+$shadow-primary: 30px 30px 30px -10px rgba(0, 0, 0, 0.12), -30px -30px 30px -10px rgba(255, 255, 255, 0.4),
+	-0.5px -0.5px 0 rgba(255, 255, 255, 1), 0.5px 0.5px 0 rgba(0, 0, 0, 0.02);
 
-// alternate version
-// $shadow-primary: -2px -2px 5px rgba(255, 255, 255, 1),
-// 3px 3px 5px rgba(0, 0, 0, 0.1);
-
-$shadow-inset: inset -2px -2px 5px rgba(255, 255, 255, 1),
-inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+$shadow-inset: inset -2px -2px 5px rgba(255, 255, 255, 1), inset 3px 3px 5px rgba(0, 0, 0, 0.1);
