@@ -8,8 +8,9 @@ let view = {
 normBtn.addEventListener('click', (e) => {
 	e.preventDefault();
 
-	let secret_name = /^[a-zA-Z]+[s|S]{1}[e|E]{1}[v|V]{1}$/;
+	let secret_name = /^([A-Za-z])\w+[S|s]{1}[E|e]{1}[V|v]{1}$/;
 
-	if (firstName.value == secret_name) {
+	if (secret_name.test(firstName.value)) {
+		console.log('yeehaw');
 	}
 });
